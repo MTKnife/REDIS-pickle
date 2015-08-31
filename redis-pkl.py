@@ -2,7 +2,7 @@ from redis import StrictRedis
 import cPickle as pickle
 
 # This sub-class of the StrictRedis class incorporates pickling and unpickling
-# through "pget" and "pset" methods that replace the "get" and "set" methods,
+# through "pset" and "pget" methods that replace the "set" and "get" methods,
 # thereby enabling the caching of complex object classes.
 
 class PickledRedis(StrictRedis):
